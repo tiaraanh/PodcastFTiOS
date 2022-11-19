@@ -1,0 +1,6 @@
+framework module Pods_PodcastFTiOS {
+  umbrella header "Pods-PodcastFTiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
