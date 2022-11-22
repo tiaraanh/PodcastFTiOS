@@ -11,7 +11,8 @@
 		949C0A942924AF0800F9F1EE /* ExploresViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C0A932924AF0800F9F1EE /* ExploresViewCell.swift */; };
 		949C0A9A2925343800F9F1EE /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C0A992925343800F9F1EE /* PlayerViewController.swift */; };
 		949C0A9C2927412F00F9F1EE /* Recommended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C0A9B2927412F00F9F1EE /* Recommended.swift */; };
-		949C0AA02927485900F9F1EE /* RecommendedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C0A9F2927485900F9F1EE /* RecommendedResponse.swift */; };
+		949C0B002929DB2800F9F1EE /* CollectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C0AFF2929DB2800F9F1EE /* CollectionsViewModel.swift */; };
+		949C0B022929DB6100F9F1EE /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C0B012929DB6100F9F1EE /* Collections.swift */; };
 		94C1DCD42924A74E0010533E /* ExploresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C1DCD32924A74E0010533E /* ExploresViewController.swift */; };
 		94C2F1212921E831003FF921 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F1202921E831003FF921 /* BaseViewController.swift */; };
 		94C2F1252923AD05003FF921 /* ExploresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F1242923AD05003FF921 /* ExploresViewModel.swift */; };
@@ -65,7 +66,8 @@
 		949C0A932924AF0800F9F1EE /* ExploresViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploresViewCell.swift; sourceTree = "<group>"; };
 		949C0A992925343800F9F1EE /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		949C0A9B2927412F00F9F1EE /* Recommended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommended.swift; sourceTree = "<group>"; };
-		949C0A9F2927485900F9F1EE /* RecommendedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedResponse.swift; sourceTree = "<group>"; };
+		949C0AFF2929DB2800F9F1EE /* CollectionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsViewModel.swift; sourceTree = "<group>"; };
+		949C0B012929DB6100F9F1EE /* Collections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
 		94C1DCD32924A74E0010533E /* ExploresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploresViewController.swift; sourceTree = "<group>"; };
 		94C2F1202921E831003FF921 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		94C2F1242923AD05003FF921 /* ExploresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploresViewModel.swift; sourceTree = "<group>"; };
@@ -140,6 +142,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		949C0AFD2929D82700F9F1EE /* Recommended */ = {
+			isa = PBXGroup;
+			children = (
+				94F6C48F291F4C9F00F6F452 /* RecommendedListViewCell.swift */,
+				94F6C4CA291FF62200F6F452 /* RecommendedViewModel.swift */,
+				94F6C493291F4CFC00F6F452 /* RecommendedViewCell.swift */,
+			);
+			path = Recommended;
+			sourceTree = "<group>";
+		};
+		949C0AFE2929D87A00F9F1EE /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				94F6C4CE2920F58C00F6F452 /* CollectionsViewCell.swift */,
+				949C0AFF2929DB2800F9F1EE /* CollectionsViewModel.swift */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
 		94E70486291D1D6A0062D24C = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +217,7 @@
 				94F6C4A5291F59E500F6F452 /* Service.swift */,
 				94F6C4A7291F5B2800F6F452 /* Podcast.swift */,
 				949C0A9B2927412F00F9F1EE /* Recommended.swift */,
+				949C0B012929DB6100F9F1EE /* Collections.swift */,
 				94F6C4A9291F608800F6F452 /* Episode.swift */,
 				94F6C4AB291F60BE00F6F452 /* DownloadedEpisode.swift */,
 			);
@@ -218,7 +240,6 @@
 				94F6C4A3291F594F00F6F452 /* APIService.swift */,
 				94F6C4BE291FE32E00F6F452 /* PlayerProvider.swift */,
 				94F6C4B4291FE21200F6F452 /* SearchResponse.swift */,
-				949C0A9F2927485900F9F1EE /* RecommendedResponse.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -249,10 +270,8 @@
 			children = (
 				94E704AF291D25E90062D24C /* Home.storyboard */,
 				94E704B1291D25F90062D24C /* HomeViewController.swift */,
-				94F6C4CA291FF62200F6F452 /* RecommendedViewModel.swift */,
-				94F6C48F291F4C9F00F6F452 /* RecommendedListViewCell.swift */,
-				94F6C493291F4CFC00F6F452 /* RecommendedViewCell.swift */,
-				94F6C4CE2920F58C00F6F452 /* CollectionsViewCell.swift */,
+				949C0AFD2929D82700F9F1EE /* Recommended */,
+				949C0AFE2929D87A00F9F1EE /* Collections */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -452,7 +471,6 @@
 				94C2F1212921E831003FF921 /* BaseViewController.swift in Sources */,
 				94E704C1291D271D0062D24C /* FavoriteViewController.swift in Sources */,
 				94F6C4D529212F3B00F6F452 /* PlayerView.swift in Sources */,
-				949C0AA02927485900F9F1EE /* RecommendedResponse.swift in Sources */,
 				94F6C4BC291FE22900F6F452 /* DoubleExtensions.swift in Sources */,
 				94F6C4BD291FE22900F6F452 /* UserDefaultsExtension.swift in Sources */,
 				94E70495291D1D6A0062D24C /* SceneDelegate.swift in Sources */,
@@ -462,6 +480,7 @@
 				94E704C6291D27640062D24C /* EpisodeViewController.swift in Sources */,
 				94F6C4B3291FE1EE00F6F452 /* PodcastsApp.xcdatamodeld in Sources */,
 				94E704B2291D25F90062D24C /* HomeViewController.swift in Sources */,
+				949C0B002929DB2800F9F1EE /* CollectionsViewModel.swift in Sources */,
 				94F6C4C3291FE68600F6F452 /* DownloadViewModel.swift in Sources */,
 				94F6C4CB291FF62200F6F452 /* RecommendedViewModel.swift in Sources */,
 				94F6C4A2291F53C100F6F452 /* UIColorExtensions.swift in Sources */,
@@ -484,6 +503,7 @@
 				94F6C4B2291FE1EE00F6F452 /* DPodcast+CoreDataProperties.swift in Sources */,
 				94C2F1252923AD05003FF921 /* ExploresViewModel.swift in Sources */,
 				949C0A942924AF0800F9F1EE /* ExploresViewCell.swift in Sources */,
+				949C0B022929DB6100F9F1EE /* Collections.swift in Sources */,
 				94F6C4D12921158800F6F452 /* EpisodeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

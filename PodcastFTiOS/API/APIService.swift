@@ -34,20 +34,40 @@ class APIService: Service {
             })
     }
     
- // func fetch podcasts episode from API in Recommended
+    // func fetch podcasts episode from API in Recommended
     func fetchPodcastsInRecommended(q: String, completion: @escaping (Result<[Recommended], Error>) -> Void) {
         let parameters: [String: Any] = [
             "media": "podcast",
             "term": q,
-            "limit": 4
+            "limit": 6
         ]
-
+        
         AF.request(SEARCH_URL, method: .get, parameters: parameters, encoding: URLEncoding.default)
-            .responseDecodable(of: RecommendedResponse.self, completionHandler: { (response) in
+            .responseDecodable(of: SearchResponse.self, completionHandler: { (response) in
                 switch response.result {
-                case .success(let recommendedResponse):
-                    completion(.success(recommendedResponse.results))
-
+                case .success(let searchResponse):
+                    completion(.success(searchResponse.resultRecommended))
+                    
+                case .failure(let error):
+                    completion(.failure(error))
+                }
+            })
+    }
+    
+    // func fetch podcasts episode from API in Collections
+    func fetchPodcastsInCollections(q: String, completion: @escaping (Result<[Collections], Error>) -> Void) {
+        let parameters: [String: Any] = [
+            "media": "music",
+            "term": q,
+            "limit": 8
+        ]
+        
+        AF.request(SEARCH_URL, method: .get, parameters: parameters, encoding: URLEncoding.default)
+            .responseDecodable(of: SearchResponse.self, completionHandler: { (response) in
+                switch response.result {
+                case .success(let searchResponse):
+                    completion(.success(searchResponse.resultCollections))
+                    
                 case .failure(let error):
                     completion(.failure(error))
                 }
@@ -55,7 +75,8 @@ class APIService: Service {
     }
     
     
-    // fetch episode from API
+    
+    // fetch episode from API for Episode VC
     func fetchEpisodes(feedUrl: String, completion: @escaping (Result<[Episode], Error>) -> Void) {
         if let url = URL(string: feedUrl) {
             let parser = FeedParser(URL: url)

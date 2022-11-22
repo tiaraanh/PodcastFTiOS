@@ -14,6 +14,7 @@ class EpisodeViewCell: UITableViewCell {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var artistsLabel: UILabel!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

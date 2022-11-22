@@ -41,14 +41,11 @@ class RecommendedViewModel {
         return recommendeds[index].artistName
     }
     
-    func recommendedTrackCount(at index: Int) -> String {
-        return "\(recommendeds[index].trackCount) Episode(s)"
-    }
-    
     func recommended(at index: Int) -> Recommended {
         return recommendeds[index]
     }
 }
 
+extension RecommendedViewModel: ManagedObjectContextGetter { }
 
 

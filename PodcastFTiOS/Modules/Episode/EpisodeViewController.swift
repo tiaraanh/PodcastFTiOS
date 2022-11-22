@@ -79,6 +79,7 @@ extension EpisodeViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "episodeCellId", for: indexPath) as! EpisodeViewCell
         
         let index = indexPath.row
+        cell.numberLabel.text = String(index+1)
         cell.titleLabel.text = viewModel.episodeTitle(at: index)
         cell.artistsLabel.text = viewModel.episodeArtist(at: index)
         cell.thumbImageView.kf.setImage(with: URL(string: viewModel.episodeImagUrl(at: index))) { (result) in
