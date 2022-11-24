@@ -11,7 +11,5 @@ class BaseViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.sizeToFit()
         
-        
-        
     }
 }

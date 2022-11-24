@@ -30,6 +30,7 @@ class HomeViewController: BaseViewController {
     func setup() {
         collectionView.dataSource = self
         collectionView.delegate = self
+        self.collectionView.reloadData()
     }
 }
 
@@ -47,7 +48,6 @@ extension HomeViewController: UICollectionViewDelegate {
             guard let `self` = self else { return }
             self.collectionsCount = self.collectionsViewModel.numberOfCollections
             self.setup()
-            self.collectionView.reloadData()
         }
     }
 }
@@ -109,8 +109,10 @@ extension HomeViewController: UICollectionViewDataSource {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collections", for: indexPath) as! CollectionsViewCell
                 
                 let index = indexPath.row
-                cell.dateLabel.text = collectionsViewModel.collectionsReleaseDate(at: index)
+                let dateLabels = collectionsViewModel.collectionsReleaseDate(at: index)
+                
                 cell.titleLabel.text = collectionsViewModel.collectionsTrackName(at: index)
+                cell.dateLabel.text = "Release date: \(dateLabels)"
                 cell.imageView.kf.setImage(with: URL(string: collectionsViewModel.collectionsImageUrl(at: index))) { (result) in
                     switch result {
                     case .success:

@@ -45,6 +45,8 @@ class PlayerView: UIView {
             contentView.topAnchor.constraint(equalTo: topAnchor),
             contentView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
+        imageView.layer.cornerRadius = 48/2
+        imageView.layer.masksToBounds = true
     }
     
     @IBAction func playButtonTapped(_ sender: Any) {

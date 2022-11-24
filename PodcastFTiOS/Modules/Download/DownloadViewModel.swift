@@ -46,7 +46,7 @@ extension DownloadViewModel {
     
     func episodePubDate(at index: Int) -> String {
         let date = filteredEpisodes[index].publishDate
-        return date.string(format: "d MMMM yyyy")
+        return date.stringDateFormatter(format: "d MMMM yyyy")
     }
     
     func episodeTitle(at index: Int) -> String {

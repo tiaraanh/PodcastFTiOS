@@ -56,7 +56,7 @@
                                 </constraints>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BE6-Jx-PPP">
-                                <rect key="frame" x="18" y="544" width="357" height="7"/>
+                                <rect key="frame" x="18" y="544" width="357" height="31"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.79607844350000001" green="0.98431372640000003" blue="0.3686274886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
@@ -64,13 +64,13 @@
                                 </connections>
                             </slider>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaQ-Om-5x6">
-                                <rect key="frame" x="0.0" y="600" width="393" height="252"/>
+                                <rect key="frame" x="0.0" y="604" width="393" height="248"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="0rG-gF-ey6">
-                                        <rect key="frame" x="78" y="50" width="237" height="62"/>
+                                        <rect key="frame" x="78" y="87.666666666666629" width="237" height="73"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUQ-cV-5sS">
-                                                <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="62"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="73"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="GUQ-cV-5sS" secondAttribute="height" multiplier="58:73" id="agx-NT-9VL"/>
                                                 </constraints>
@@ -81,7 +81,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU5-KO-sYB">
-                                                <rect key="frame" x="79.333333333333343" y="0.0" width="97" height="62"/>
+                                                <rect key="frame" x="88" y="0.0" width="83" height="73"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="play"/>
                                                 <connections>
@@ -89,7 +89,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZt-8s-31r">
-                                                <rect key="frame" x="206.33333333333331" y="0.0" width="30.666666666666657" height="62"/>
+                                                <rect key="frame" x="201" y="0.0" width="36" height="73"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="KZt-8s-31r" secondAttribute="height" multiplier="36:73" id="Fpw-Yf-IYz"/>
                                                 </constraints>
@@ -105,20 +105,18 @@
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="0rG-gF-ey6" secondAttribute="trailing" constant="78" id="CIo-w1-hYF"/>
-                                    <constraint firstAttribute="bottom" secondItem="0rG-gF-ey6" secondAttribute="bottom" constant="140" id="GWs-L5-eJu"/>
+                                    <constraint firstItem="0rG-gF-ey6" firstAttribute="centerY" secondItem="jaQ-Om-5x6" secondAttribute="centerY" id="FZO-kt-pvP"/>
                                     <constraint firstItem="0rG-gF-ey6" firstAttribute="leading" secondItem="jaQ-Om-5x6" secondAttribute="leading" constant="78" id="jam-Ah-wMQ"/>
-                                    <constraint firstItem="0rG-gF-ey6" firstAttribute="centerX" secondItem="jaQ-Om-5x6" secondAttribute="centerX" id="ou6-x7-lcF"/>
-                                    <constraint firstItem="0rG-gF-ey6" firstAttribute="top" secondItem="jaQ-Om-5x6" secondAttribute="top" constant="50" id="zba-Mg-Vsw"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJP-QS-19M">
-                                <rect key="frame" x="20.000000000000004" y="560" width="41.333333333333343" height="36"/>
+                                <rect key="frame" x="20.000000000000004" y="584" width="41.333333333333343" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKN-Ot-pPR">
-                                <rect key="frame" x="331.66666666666669" y="560" width="41.333333333333314" height="36"/>
+                                <rect key="frame" x="331.66666666666669" y="584" width="41.333333333333314" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -128,7 +126,7 @@
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="wE7-Bi-c9m" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="0Vv-I3-7bW"/>
-                            <constraint firstItem="jaQ-Om-5x6" firstAttribute="top" secondItem="BE6-Jx-PPP" secondAttribute="bottom" constant="50" id="2x0-ph-1nk"/>
+                            <constraint firstItem="jaQ-Om-5x6" firstAttribute="top" secondItem="BE6-Jx-PPP" secondAttribute="bottom" constant="30" id="2x0-ph-1nk"/>
                             <constraint firstItem="BE6-Jx-PPP" firstAttribute="top" secondItem="wE7-Bi-c9m" secondAttribute="bottom" constant="20" id="6eQ-gG-LqN"/>
                             <constraint firstItem="BE6-Jx-PPP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ABs-uB-jVm"/>
                             <constraint firstItem="CKN-Ot-pPR" firstAttribute="trailing" secondItem="BE6-Jx-PPP" secondAttribute="trailing" id="IXn-AV-MiI"/>

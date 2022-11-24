@@ -53,6 +53,8 @@ class PlayerViewController: UIViewController {
             switch result {
             case.success:
                 self.imageView.contentMode = .scaleAspectFill
+                self.imageView.layer.cornerRadius = 240/2
+                self.imageView.layer.masksToBounds = true
             case .failure:
                 self.imageView.contentMode = .center
                 self.imageView.image = UIImage(systemName: "photo")

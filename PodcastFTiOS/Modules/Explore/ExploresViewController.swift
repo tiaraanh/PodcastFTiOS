@@ -21,7 +21,7 @@ class ExploresViewController: BaseViewController {
 
         // Do any additional setup after loading the view.
         setup()
-        title = "Explores"
+//        title = "Explores"
     }
     
     func setup() {
