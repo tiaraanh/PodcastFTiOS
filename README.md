@@ -29,7 +29,7 @@ Install PodcastFTiOS use Cocoapods
 - open PodcastFTiOS directory
 `cd PodcastFTiOS`
 
-- open terminal and `cd` to Podcasts folder root & run pod `install` (install Cocoapods for this command to work).
+- open terminal and `cd` to PodcastFTiOS folder root & run pod `install` (install Cocoapods for this command to work).
 `pod install`
 
 - open PodcastFTiOS.xcworkspace
